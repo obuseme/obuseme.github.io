@@ -1,14 +1,72 @@
 # Site settings
-title: Andy Obusek
-email: obusek@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: obusek
-github_username:  obuseme
 
-# Build settings
-markdown: kramdown
+url: "http://obuseme.github.io"
+title: "{ Andy Obusek }"
+description: "Website of Andy Obusek. Opinions expressed are mine."
+keywords: "aweber, ios, vanguard, andy, obusek"
+favicon: ""
+black-favicon: ""
+google-tracking-id: "UA-35880426-3"
+disqus-shortname: "obusek"
+
+# Navigation bar links
+# Blog link in the blog and post pages will point to the blog.html#blog
+# In the default page it will point to the preview of the last post
+
+pages_list:
+  About: 'about'
+  Career: 'career'
+  Contact: 'contact'
+
+background-img: "/img/bg-blur-dark.jpg"
+
+# About variables
+
+me-img: "/img/AndyO-1.png"
+
+# Blog variables
+paginate: 15
+
+paginate_path: "blog/page:num"
+
+post-preview-words: 128
+
+fb-share: True
+twitter-share: True
+reddit-share: True
+
+# Career variables
+
+events:
+  - image: "/img/career/bike2go.png"
+    date: "February 2015 - Today"
+    description: "bike2go is a passion project to create an iOS application for Philadelphia bike share users to find stations, racks, and bikes."
+  - image: "/img/career/atom.png"
+    date: "September 2014 - Today"
+    description: "AWeber Atom is an app for AWeber customers to add new subscribers to their list."
+  - image: "/img/career/Stats.jpeg"
+    date: "November 2013 - Today"
+    description: "AWeber Stats is an app for AWeber customers to use to view analytics and stats about their lists on the go."
+  - image: "/img/career/vga.png"
+    date: "January 2011 - September 2011"
+    description: "Vanguard Advisors is an app providing content for financial advisors."
+  - image: "/img/career/vg.jpeg"
+    date: "May 2008 - September 2011"
+    description: "The flagship app for Vanguard, used for viewing account balances and making financial transations."
+
+# First image of the Career timeline
+career-img: "/img/career/default.jpg"
+
+# Social networks variables (many more available: facebook, flickr, dribbble, pinterest, instagram, tumblr etc.)
+social:
+  - title: "github"
+    url: "https://github.com/obuseme"
+  - title: "linkedin"
+    url: "https://www.linkedin.com/profile/view?id=AAEAAAGF2HgBzD2qlqp1T5NUWlleshbPhdZvheg"
+  - title: "youtube"
+    url: "https://www.youtube.com/channel/UCQfxy7xI9PVR79gpLENfX_Q"
+
+404-img: "/img/labtocat.png"
+
+# Exclusion list from the generated _site
+exclude: ["Rakefile", "LICENSE", "readme.markdown", "vendor"]
